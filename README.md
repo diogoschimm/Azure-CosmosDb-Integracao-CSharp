@@ -258,3 +258,24 @@ using Microsoft.Azure.Documents.Client;
       await _client.DeleteDocumentAsync(uriDocument);
   }
 ```
+
+## Model (Container)
+
+```c#
+  public class Supplier
+  {
+      public Supplier()
+      {
+          SupplierId = Guid.NewGuid().ToString();
+      }
+
+      public string Id { get; set; } 
+      public string SupplierId { get; set; }
+      public string Name { get; set; }
+      public string DocumentNumber { get; set; }
+      public string DocumentType { get; set; }
+  }
+```
+
+
+
